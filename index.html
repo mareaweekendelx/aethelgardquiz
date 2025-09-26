@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Personagem - Aethelgard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section id="welcome-screen">
+            <h1>Bem-vindo a Aethelgard!</h1>
+            <p>
+                No Reino dos Elementos, cada alma ressoa com o poder da terra, dos céus ou do fogo interior das montanhas.
+                Responda ao nosso questionário e descubra qual grande herói de Aethelgard você seria.
+            </p>
+            <button id="start-btn">Começar o Jogo</button>
+        </section>
+
+        <section id="quiz-screen" class="hidden">
+            <h2 id="question-text"></h2>
+            <div id="options-container"></div>
+            <p id="question-counter"></p>
+        </section>
+
+        <section id="result-screen" class="hidden">
+            <h2>Você seria...</h2>
+            <img id="character-image" src="" alt="Imagem do Personagem">
+            <h3 id="character-name"></h3>
+            <p id="character-description"></p>
+            <p id="character-score">Sua pontuação final para este personagem foi: <strong>0</strong></p>
+            <button id="restart-btn">Recomeçar</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
